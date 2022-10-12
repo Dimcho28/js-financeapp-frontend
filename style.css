@@ -1,7 +1,9 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #60FD00 !important;
+    background: url(image/background.jpg);
+    background-position: center;
+    font-family: sans-serif;
 }
 
 .container {
