@@ -13,28 +13,28 @@
     <title>Finance App</title>
 </head>
 <body>
-    <div id="login" class="login-box">
+    <div id="login" class="start-box">
         <img src="image/avatar.png" class="avatar">
         <div id="btn">
-            <button type="button" onclick="register()">Sign In</button>
-            <button type="button" onclick="login()">Log In</button>
+            <button class="heder-btn" type="button" onclick="register()">Sign In</button>
+            <button class="heder-btn" type="button" onclick="login()">Log In</button>
         </div>
         <form>
-            <p>Email</p>
+            <p>Email1</p>
             <input type="text" name="Email" placeholder="Enter Email">
             <p>Passworld</p>
             <input type="text" name="passworld" placeholder="Enter Passworld">
             <input type="submit" name="submit" value="Login">
         </form>
     </div>
-    <div id="register" class="register-box">
+    <div id="register" class="start-box">
         <img src="image/avatar.png" class="avatar">
         <div id="btn">
-            <button type="button" onclick="register()">Sign In</button>
-            <button type="button" onclick="login()">Log In</button>
+            <button class="heder-btn" type="button" onclick="register()">Sign In</button>
+            <button class="heder-btn" type="button" onclick="login()">Log In</button>
         </div>
         <form id="register">
-            <p>Email</p>
+            <p>Email2</p>
             <input type="text" name="Email" placeholder="Enter Email">
             <p>Passworld</p>
             <input type="text" name="passworld" placeholder="Enter Passworld">
@@ -48,15 +48,15 @@
     var y = document.getElementById("register")
     var z = document.getElementById("btn")
     function register () {
-        x.style.left = "400px"
+        x.style.left = "-400px"
         y.style.left = "250"
         z.style.left = "110px"
     }
 
     function login () {
         x.style.left = "50px"
-        y.style.left = "300"
-        z.style.left = "110px"
+        y.style.left = "450"
+        z.style.left = "0px"
     }
 </script>
 </body>
