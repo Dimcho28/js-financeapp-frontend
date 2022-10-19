@@ -19,7 +19,6 @@ body {
 
 .start-box {
     width: 320px;
-    height: 420px;
     background: rgba(0, 0, 0, 0.5);
     color: #fff;
     top: 50%;
@@ -58,7 +57,7 @@ button {
     margin-bottom: 20px;
 }
 
-.start-box input[type="text"], input[type="passworld"] {
+.start-box input {
     border: none;
     border-bottom: 1px solid #fff;
     background: transparent;
@@ -77,6 +76,9 @@ button {
     border-radius: 30px;
 }
 
+#register {
+    display: none;
+}
 
 
 
