@@ -11,10 +11,9 @@ body {
     border: none;
     outline: none;
     color: #fff;
-    background-color: #1c8adb;
     padding: 10px 20px;
     border-radius: 30px;
-    margin: 20px;
+    margin: 18px;
 }
 
 .start-box {
@@ -78,6 +77,15 @@ button {
 
 #register {
     display: none;
+}
+
+.active-btn {
+    background-color: #1c8adb;
+    font-weight: bold;
+}
+
+.inactive-btn {
+    background-color: #77CCFF;
 }
 
 

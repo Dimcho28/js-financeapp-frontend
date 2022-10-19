@@ -13,25 +13,36 @@
     <title>Finance App</title>
 </head>
 <body>
-    <div id="login" class="start-box">
+    <div class="start-box">
         <img src="image/avatar.png" class="avatar">
         <div id="btn">
-            <button class="heder-btn" type="button" onclick="register()">Sign In</button>
-            <button class="heder-btn" type="button" onclick="login()">Log In</button>
+            <button id="registerBtn" class="heder-btn inactive-btn" type="button" onclick="register()">Sign In</button>
+            <button id="loginBtn" class="heder-btn active-btn" type="button" onclick="login()">Log In</button>
         </div>
-        <form>
+        <form id="login">
             <p>Email</p>
             <input type="text" name="Email" placeholder="Enter Email">
             <p>Passworld</p>
             <input type="password" name="passworld" placeholder="Enter Passworld">
             <input type="submit" name="submit" value="Login">
         </form>
+
+        <form id="register">
+            <p>Name</p>
+            <input type="text" name="Name" placeholder="Name">
+            <p>Email</p>
+            <input type="text" name="Email" placeholder="Enter Email">
+            <p>Passworld</p>
+            <input type="password" name="passworld" placeholder="Enter Passworld">
+            <input type="password" name="passworld" placeholder="Repeat Passworld">
+            <input type="submit" name="submit" value="Register">
+        </form>
     </div>
-    <div id="register" class="start-box">
+    <!-- <div id="register" class="start-box">
         <img src="image/avatar.png" class="avatar">
         <div id="btn">
-            <button class="heder-btn" type="button" onclick="register()">Sign In</button>
-            <button class="heder-btn" type="button" onclick="login()">Log In</button>
+            <button id="registerBtn" class="heder-btn" type="button" onclick="register()">Sign In</button>
+            <button id="loginBtn" class="heder-btn" type="button" onclick="login()">Log In</button>
         </div>
         <form>
             <p>Name</p>
@@ -43,7 +54,7 @@
             <input type="password" name="passworld" placeholder="Repeat Passworld">
             <input type="submit" name="submit" value="Register">
         </form>
-    </div>
+    </div> -->
 
 
 <script>
@@ -53,12 +64,21 @@
     function register () {
         document.getElementById("register").style.display = "block";
         document.getElementById("login").style.display = "none";
+        document.getElementById("registerBtn").classList.add("active-btn")
+        document.getElementById("loginBtn").classList.add("inactive-btn")
+        document.getElementById("registerBtn").classList.remove("inactive-btn")
+        document.getElementById("loginBtn").classList.remove("active-btn")
     }
 
     function login () {
         document.getElementById("register").style.display = "none";
         document.getElementById("login").style.display = "block";
+        document.getElementById("loginBtn").classList.add("active-btn")
+        document.getElementById("registerBtn").classList.add("inactive-btn")
+        document.getElementById("loginBtn").classList.remove("inactive-btn")
+        document.getElementById("registerBtn").classList.remove("active-btn")
     }
+
 </script>
 </body>
 </html>
