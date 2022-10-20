@@ -40,29 +40,38 @@
     </div>
 
 <script>
-    const loginForm = document.getElementById("loginForm")
-    const registerForm = document.getElementById("registerForm")
-    const registerBtn = document.getElementById("registerBtn")
-    const loginBtn = document.getElementById("loginBtn")
+    const loginForm = document.getElementById("loginForm");
+    const registerForm = document.getElementById("registerForm");
+    const registerBtn = document.getElementById("registerBtn");
+    const loginBtn = document.getElementById("loginBtn");
 
 
 
     function register () {
         registerForm.style.display = "block";
         loginForm.style.display = "none";
-        registerBtn.classList.add("active-btn")
-        loginBtn.classList.add("inactive-btn")
-        registerBtn.classList.remove("inactive-btn")
-        loginBtn.classList.remove("active-btn")
+        
+        activityForBtn(registerBtn);
+        inactivityForBtn(loginBtn);
     }
 
     function login () {
         registerForm.style.display = "none";
         loginForm.style.display = "block";
-        loginBtn.classList.add("active-btn")
-        registerBtn.classList.add("inactive-btn")
-        loginBtn.classList.remove("inactive-btn")
-        registerBtn.classList.remove("active-btn")
+
+        activityForBtn(loginBtn);
+        inactivityForBtn(registerBtn);
+        
+    }
+
+    function activityForBtn (button) {
+        button.classList.add("active-btn");
+        button.classList.remove("inactive-btn");
+    }
+
+    function inactivityForBtn (button) {
+        button.classList.add("inactive-btn");
+        button.classList.remove("active-btn");
     }
 
 </script>
