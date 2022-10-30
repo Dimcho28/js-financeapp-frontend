@@ -1,10 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: #131313 !important;
-    background-size: cover;
-    background-position: center;
-    font-family: sans-serif;
+    background: #131313;
 }
 
 .heder-btn {
@@ -13,7 +10,7 @@ body {
     color: #fff;
     padding: 10px 20px;
     border-radius: 30px;
-    margin: 18px;
+    margin: 8px;
 }
 
 .start-box {
@@ -35,25 +32,15 @@ body {
     position: absolute;
     top: -50px;
     left: calc(50% - 50px);
-     
 }
 
 button {
-    margin: 0;
     padding: 0 0 20px;
     text-align: center;
-    font-size: 22px;
 }
 
 .start-box p {
-    margin: 0;
-    padding: 0;
     font-weight: bold;
-}
-
-.start-box input {
-    width: 100%;
-    margin-bottom: 20px;
 }
 
 .start-box input {
@@ -63,6 +50,8 @@ button {
     height: 40px;
     color: #fff;
     font-size: 16px;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 .start-box input[type="submit"] {
@@ -87,12 +76,3 @@ button {
 .inactive-btn {
     background-color: #77CCFF;
 }
-
-
-
-
-
-
-
-
-
