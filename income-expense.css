@@ -1,0 +1,13 @@
+body{
+    background-color: #131313;
+    color: #fff;
+}
+
+.box {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.btn {
+    background-color: #1c8adb;
+    color: #fff;
+}
