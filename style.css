@@ -82,3 +82,8 @@ button {
 .color-white {
     color: #fff !important;
 }
+
+.home-box {
+    margin-left: 50vh;
+    width: 125vh;
+}
