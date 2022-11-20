@@ -8,7 +8,11 @@ function request (endPoint, method, requestBody, success) {
         url: baseUrl+endPoint,
         type: method,
         data: requestBody,
-        headers: {"Authorization" : "Bearer "+ token},
-        success: success
+        headers: {
+            "Authorization" : "Bearer "+ token,
+            "Access-Control-Allow-Origin": "*"
+        },
+        success: success,
+        contentType: "application/json",
     });
 }
