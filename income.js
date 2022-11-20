@@ -16,7 +16,9 @@ function addIncome () {
         amount: amount,
         comment: comment
     };
-    console.log(requestBody);
-    request("income/add", "post", requestBody);
+    
+    request("income/add", "post", requestBody,()=>{
+        request("income/get", "get", undefined, logIncome);  
+    });
 }
 
