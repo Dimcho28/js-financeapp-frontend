@@ -7,10 +7,11 @@ function request (endPoint, method, requestBody, success) {
     $.ajax ({
         url: baseUrl+endPoint,
         type: method,
-        data: requestBody,
+        data: JSON.stringify(requestBody),
         headers: {
             "Authorization" : "Bearer "+ token,
-            "Access-Control-Allow-Origin": "*"
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Heders": "*"
         },
         success: success,
         contentType: "application/json",
