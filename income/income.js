@@ -1,8 +1,8 @@
 function logIncome (incomes) {
     const incomeTableBody = $("#incomeTableBody");
     for(const income of incomes) {
-        incomeTableBody.append(`<tr> <td>${income.amount}</td> <td>${income.comment}</td> <td>${income.date}</td> </tr>`)
-    }
+        incomeTableBody.append(`<tr> <td>${income.amount}</td> <td>${income.comment}</td> <td>${income.date}</td> <td> <button class="btn-del" onclick="deleteIncome('${income.id}')">Delete</button></td> </tr>`)
+    };
 }
 
 request("income/get", "get", undefined, logIncome);
@@ -22,3 +22,9 @@ function addIncome () {
     });
 }
 
+function deleteIncome (id) {
+    request(`income/delete/${id}`, "delete", undefined, ()=>{
+        request("income/get", "get", undefined, logIncome);
+    });
+
+}
